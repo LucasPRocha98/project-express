@@ -4,6 +4,13 @@ body {
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
 .header {
     background-image: radial-gradient(circle at 6.92% 46.23%, #b5f3a0 0, #a2ec9d 16.67%, #8ae397 33.33%, #6cd890 50%, #48cd8a 66.67%, #09c388 83.33%, #00bc88 100%);
     color: #fff;
@@ -17,32 +24,6 @@ body {
     max-height: 40px;
 }
 
-.catalogo {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-    padding: 20px;
-}
-
-.item {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-.item img {
-    max-width: 100%;
-}
-
-.item h3 {
-    margin-top: 5px;
-    
-}
-
-.item p {
-    margin-top: 5px;
-}
-
 .nav-button {
     background-color: transparent;
     border: none;
@@ -53,6 +34,84 @@ body {
 .nav-button img {
     max-height: 40px;
 }
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 100px 0px 100px 0px;
+    text-align: center;
+}
+
+.item img {
+    max-width: 100%;
+}
+
+.item h1 {
+    margin-top: 5px;
+    
+}
+
+.item p {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.open-modal-button {
+    margin-top: 10px;
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    z-index: 1;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+.modal textarea {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal button {
+    margin-top: 10px;
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal button:hover {
+    background-color: #0d8af8;
+}
+
 
 
 .footer {
@@ -65,14 +124,3 @@ body {
     text-align: center;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-
-.wrapper {
-    min-height: 100vh;
-    position: relative;
-}
