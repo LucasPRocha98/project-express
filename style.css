@@ -86,15 +86,25 @@ html, body {
     z-index: 1;
 }
 
+.atualizarItem{
+    font-family:Verdana, Geneva, Tahoma, serif;
+}
+
+.tituloModal {
+    font-weight: bold;
+    font-size: large;   
+}
+
 .modal-content {
     text-align: center;
 }
 
 .modal textarea {
-    width: 100%;
+    width: 600px;
     margin-top: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    height: 200px;
 }
 
 .modal button {
